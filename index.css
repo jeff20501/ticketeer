@@ -11,8 +11,7 @@ body{
     color: hsl(0, 0%, 100%);
     background-image: 
         url("./assets/images/background-desktop.png");
-    background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     
