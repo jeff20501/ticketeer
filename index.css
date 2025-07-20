@@ -13,6 +13,7 @@ body{
         url("./assets/images/background-desktop.png");
     background-size: cover;
     height: 100vh;
+    max-width: 100vh;
     
 
 }
