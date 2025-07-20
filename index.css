@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    max-inline-size: 2000px;
+    font-family: "Inconsolata";
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 100%);
+    background-image: 
+        url("./assets/images/background-desktop.png"),
+        url("./assets/images/pattern-lines.svg");
+    background-position: center, top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+img{
+    max-inline-size: 100%;
+    display: block;
+}
+
+
+.header{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header p{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.wrapper{
+    text-align: center;
+    max-inline-size: 600px;
+    margin: 0 auto;
+    color: hsl(252, 6%, 83%);
+}
+
+.wrapper h1{
+    margin-top: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+.wrapper2{
+    text-align: start;
+    max-inline-size: 500px;
+    margin: 0 auto;
+}
+
+
+
+.upload-avatar{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.image-view{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-items: center;
+    border: 2px hsl(7, 88%, 67%) dashed;
+    border-radius: 10px;
+    block-size: 150px;
+}
+
+.image-view:hover{
+    cursor: pointer;
+    background: rgba(204, 200, 200, .2);
+}
+
+
+
+.image-view img{
+    background-color: hsl(252, 6%, 83%);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+    max-inline-size: 80px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info img{
+    inline-size: 25px;
+}
+
+.name{
+    margin-top: 20px;
+}
+
+.email{
+    margin-top: 20px;
+}
+
+.username{
+    margin-top: 20px;
+}
+
+.input-name{
+    font-size: 1.3rem;
+    border: 1px solid hsl(252, 6%, 83%);
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    block-size: 50px;
+    border-radius: 10px;
+}
+
+.input-name:hover{
+    cursor: pointer;
+    background: rgba(204, 200, 200, .2);
+}
+
+
+.input-email{
+    font-size: 1.3rem;
+    border: 1px solid hsl(252, 6%, 83%);
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    block-size: 50px;
+    border-radius: 10px;
+}
+
+.input-email:hover{
+    cursor: pointer;
+    background: rgba(204, 200, 200, .2);
+}
+
+.git-username{
+    font-size: 1.3rem;
+    border: 1px solid hsl(252, 6%, 83%);
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    block-size: 50px;
+    border-radius: 10px;
+}
+
+.git-username:hover{
+    cursor: pointer;
+    background: rgba(204, 200, 200, .2);
+}
+
+.button{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: hsl(7, 88%, 67%);
+    color: hsl(248, 70%, 10%);
+    border: none;
+    width: 100%;
+    block-size: 45px;
+    border-radius: 10px;
+    transition: .7s;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: hsl(7, 71%, 60%);
+}
+
+.avatar-preview{
+    justify-content: center;
+}
+
+.avatar-preview img{
+    margin: 0 auto;
+    inline-size: 100px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.avatar-preview button{
+    color:hsl(252, 6%, 83%);
+    border: none;
+    background: rgba(255, 255, 255, 0.267);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.avatar-preview button:hover{
+    cursor:pointer;
+    background: hsl(7, 71%, 60%);
+}
+
+.error{
+    display: flex;
+    gap: 10px;
+    color: hsl(0, 83%, 42%);
+}
+
+
+.wrapper2-page2{
+    max-inline-size: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.user-name{
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text;
+    color: transparent;
+}
+
+.user-email{
+    text-transform: lowercase;
+    color:hsl(7, 86%, 67%);
+    letter-spacing: 4px;
+}
+
+.ticket{
+    width: 100%;
+}
+
+.ticket-text{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    
+}
+
+.ticket-details{
+    display: flex;
+    gap: 20px;
+    text-align: start;
+    margin-bottom: 25px;
+}
+.ticket-details img{
+    max-inline-size: 35px;
+}
+
+.ticket-details div{
+    line-height: 40px;
+}
+
+
+.avatar-img img{
+    max-inline-size: 70px;
+    border-radius: 10px;
+}
+
+.avatar-details{
+    margin-top:40px;
+    display: flex;
+    gap:15px;
+    text-align: start;
+}
+
+.avatar-details h4{
+    font-weight: 600;
+    letter-spacing: 4px;
+
+}
+
+.user-ticket-details{
+    padding: 10px;
+}
+
+.user-ticket-details h3{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.github-details{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.github-details img{
+    max-inline-size: 30px;
+}
+
+
+.ticket-number{
+    transform: rotate(-180%);
+}
+
+
+.attribution{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(7, 88%, 67%);
+}
+
+.attribution a:hover{
+    color: hsl(7, 71%, 60%);
+}

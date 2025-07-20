@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo-mark.svg">
+  <link rel="stylesheet" href="./index.css">
+  
+  <title>Conference ticket generator</title>
+
+</head>
+<body>
+  <header class="header">
+    <img src="./assets/images/logo-mark.svg">
+    <p>Coding Conf</p>
+  </header>
+
+  <article class="wrapper">
+    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p>Secure your spot at next year's biggest coding conference.</p>
+    <section class="wrapper2">
+      <div class="upload-avatar">
+        <h3>Upload avatar</h3>
+        <label for="input-file" class="droparea">
+          <input id="input-file" class="input-file" accept="image/*" type="file" style="display: none;">
+          <div class="image-view">
+              <img src="./assets/images/icon-upload.svg">
+              <p>Drag and drop or <br> click to upload</p>
+          </div>
+        </label>
+
+        <div class="info">
+          <img src="./assets/images/icon-info.svg"><span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+        </div>
+      </div>
+
+      <div class="name">
+        <h3>Full Name</h3>
+        <input class="input-name" accept="text" type="text">
+        <div class="error-msg"></div>
+      </div>
+
+      <div class="email">
+        <h3>Email Address</h3>
+        <input placeholder="example@email.com" class="input-email" accept="email/*" type="email">
+        <div class="error-msg"></div>
+      </div>
+
+      <div class="username">
+        <h3>GitHub Username</h3>
+        <input class="git-username" placeholder="  @yourusername" type="text">
+        <div class="error-msg"></div>
+      </div>
+      
+      <div>
+        <button type="submit" class="button">Generate My Ticket</button>
+      </div>
+      
+    </section>
+  </article>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/jeff20501">Pixel&Code</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
