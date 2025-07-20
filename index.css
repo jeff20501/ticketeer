@@ -10,10 +10,9 @@ body{
     font-size: 1.1rem;
     color: hsl(0, 0%, 100%);
     background-image: 
-        url("./assets/images/background-desktop.png"),
-        url("./assets/images/pattern-lines.svg");
-    background-position: center, top;
-    background-size: cover;
+        url("./assets/images/background-desktop.png");
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
     
