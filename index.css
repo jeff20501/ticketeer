@@ -12,7 +12,6 @@ body{
     background-image: 
         url("./assets/images/background-desktop.png");
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     
 
@@ -49,6 +48,9 @@ img{
     font-size: 2.5rem;
     letter-spacing: 3px;
     color: hsl(0, 0%, 100%);
+    @media(width<850px){
+        font-size:1.5rem;
+    }
 }
 
 
