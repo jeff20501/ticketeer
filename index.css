@@ -12,8 +12,8 @@ body{
     background-image: 
         url("./assets/images/background-desktop.png");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
-    max-width: 100vh;
     
 
 }
@@ -244,6 +244,7 @@ img{
 
 .ticket{
     width: 100%;
+    block-size: 50px;
 }
 
 .ticket-text{
@@ -274,10 +275,11 @@ img{
 }
 
 .avatar-details{
-    margin-top:40px;
+    margin-top:30px;
     display: flex;
     gap:15px;
     text-align: start;
+    align-items: center;
 }
 
 .avatar-details h4{
@@ -303,7 +305,7 @@ img{
 }
 
 .github-details img{
-    max-inline-size: 30px;
+    max-inline-size: 25px;
 }
 
 

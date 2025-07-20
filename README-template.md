@@ -75,6 +75,7 @@ Preventing accidental double-event firing using ```stopPropagation()```
 ### Screenshot
 
 ![](./assets/images/Screenshot_20-7-2025_165423_127.0.0.1.jpeg)
+![](./assets/images/Screenshot_20-7-2025_18944_127.0.0.1.jpeg)
 
 
 ### Links
