@@ -272,6 +272,7 @@ img{
 .avatar-img img{
     max-inline-size: 70px;
     border-radius: 10px;
+    block-size: 70px;
 }
 
 .avatar-details{
@@ -294,7 +295,7 @@ img{
 
 .user-ticket-details h3{
     text-transform: capitalize;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .github-details{
@@ -311,20 +312,4 @@ img{
 
 .ticket-number{
     transform: rotate(-180%);
-}
-
-
-.attribution{
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.attribution a{
-    text-decoration: none;
-    color: hsl(7, 88%, 67%);
-}
-
-.attribution a:hover{
-    color: hsl(7, 71%, 60%);
 }
