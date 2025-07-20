@@ -74,13 +74,14 @@ if(inputFile&&button){
 
     }) 
     reader.readAsDataURL(file); // Converts to base64!
+    })
 
     button.addEventListener("click", ()=>{
         let hasError = false // here we do not have any error as we evaluate we turn it to true
         errorMsg.forEach(el=>el.innerHTML="") //to clear previous error message
 
         if (inputEmail.value.trim()===""){
-        inputEmail.nextElementSibling.innerHTML+=`<p class="error">You have entered an invalid email address!<p>`
+        inputEmail.nextElementSibling.innerHTML+=`<p class="error">You have entered an invalid email address!</p>`
         //nextElementSibling returns the element immediately following the specified one in its parent's children
         hasError = true // Error found, set the flag
         }
@@ -97,6 +98,7 @@ if(inputFile&&button){
             hasError = true // Error found, set the flag
 
         }
+    })
 
     if(!hasError){
         localStorage.setItem("name", inputName.value)
@@ -104,9 +106,6 @@ if(inputFile&&button){
         localStorage.setItem("github-username", gitUsername.value)
         window.location.href="ticket.html"
     }
-    
-})
-})
 
 }
 
