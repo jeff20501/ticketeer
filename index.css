@@ -249,10 +249,23 @@ img{
 }
 
 .ticket-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 10%;
     left: 8%;
     
+}
+
+.ticket-number{
+    text-align: end;
+    margin: 0 auto;
+    right:10%;
+    color: hsl(245, 19%, 35%);
+    font-size: 2rem;
+    translate: 60%;
+    rotate: .25turn;
 }
 
 .ticket-details{
@@ -310,7 +323,3 @@ img{
     max-inline-size: 25px;
 }
 
-
-.ticket-number{
-    transform: rotate(-180%);
-}

@@ -10,7 +10,7 @@ const imageView = document.querySelector(".image-view")
 const userName = document.querySelector(".user-name")
 const userEmail = document.querySelector(".user-email")
 const avatarDetails = document.querySelector(".avatar-details")
-const ticketNumber = document.querySelector("ticket-number")
+const ticketNumber = document.querySelector(".ticket-number")
 
 function validateSize(file){
     const maxSize = 500 * 1024 // 500kb 1kb=1024bytes
@@ -98,14 +98,13 @@ if(inputFile&&button){
             hasError = true // Error found, set the flag
 
         }
-    })
-
-    if(!hasError){
+        if(!hasError){
         localStorage.setItem("name", inputName.value)
         localStorage.setItem("email", inputEmail.value)
         localStorage.setItem("github-username", gitUsername.value)
         window.location.href="ticket.html"
     }
+    })
 
 }
 
@@ -119,7 +118,7 @@ function ValidateEmail(mail)
 }
 
 
-if(userName && userEmail && avatarDetails){
+if(userName && userEmail && avatarDetails&&ticketNumber){
     const avatar=localStorage.getItem("avatar")
     const name=localStorage.getItem("name")
     const email=localStorage.getItem("email")
@@ -146,10 +145,10 @@ if(userName && userEmail && avatarDetails){
                 </div>
             </div>
         `
-        let number = Math.floor(Math.random()*10000+1)
-
-        ticketNumber.innerHTML=`<p># ${number} `
     }
+    let number = Math.floor(Math.random()*10000+1)
+    console.log(number)
+    ticketNumber.innerHTML+=`<p># ${number} </p>`
 }
 
 
