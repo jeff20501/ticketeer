@@ -11,10 +11,17 @@ body{
     background-color: hsl(248, 70%, 10%);
     color: hsl(0, 0%, 100%);
     background-image: 
-        url("./assets/images/background-desktop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    url('./assets/images/pattern-lines.svg'),
+    url('./assets/images/background-desktop.png'),
+    url('./assets/images/pattern-squiggly-line-top.svg');
+  background-repeat: no-repeat, no-repeat,  no-repeat;
+  background-size: cover, cover, contain;
+  background-position: center, center, end;
+  background-attachment: scroll, fixed, fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
     
 
 }
